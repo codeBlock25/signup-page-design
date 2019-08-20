@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background-image: linear-gradient(#e8e6e6,#191c26)
+}
+section .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 20px 2px #353535db;
+}
+section .wrapper .content_wrapper {
+    width: 50%;
+    height: 100%;
+    display: block;
+    border-radius: 5px 0 0 5px;
+}
+section .wrapper .content_wrapper:nth-child(1){
+    background-image: url('../image/dark-forest-0131-4k.png');
+    background-size: cover;
+    background-position: center left;
+}
+section .wrapper .content_wrapper:nth-child(1) div {
+    width: 80%;
+    height: 50%;
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+}
+section .wrapper .content_wrapper:nth-child(1) div h3 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    border: 2px black solid;
+    line-height: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    font-size: 35px;
+}
+section .wrapper .content_wrapper:nth-child(1) div p {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: auto;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: #81919e
+    /* color: #E91E63 */
+}
+section .wrapper .content_wrapper:nth-child(2){
+    border-radius: 0 5px 5px 0;
+}
+section .wrapper .content_wrapper:nth-child(2) h2 {
+    width: 100%;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    padding: 0 0 0 40px;
+    margin: 30px 0 0 0;
+    font-size: 30px;
+    color: #E91E63;
+}
+section .wrapper .content_wrapper:nth-child(2) h3 {
+    width: 100%;
+    height: 30px;
+    display: block;
+    padding: 0 0 0 40px;
+    color: #3c4a54;
+    font-weight: 600;
+    font-size: 18px;
+    font-style: italic;
+}
+section .wrapper .content_wrapper:nth-child(2) form {
+    position: relative;
+    left: 50%;
+    width: 90%;
+    height: calc(100% - 120px);
+    transform: translateX(-50%);
+    display: block;
+    border-radius: 5px;
+}
+section .wrapper .content_wrapper:nth-child(2) form label {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    line-height: 40px;
+    display: block;
+    padding: 0 0 0 20px;
+    color: #526879;
+    font-weight: 600;
+}
+section .wrapper .content_wrapper:nth-child(2) form input {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 45px;
+    padding: 0 20px 0 30px;
+    font-size: 17px;
+    display: block;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    background-color: #e2e2e2;
+    color: #6b6b6b;
+    transition: .4s;
+}
+section .wrapper .content_wrapper:nth-child(2) form input:hover,
+section .wrapper .content_wrapper:nth-child(2) form input:focus,
+section .wrapper .content_wrapper:nth-child(2) form input:active {
+    background: #d4d4d4;
+    height: 50px;
+}
+section .wrapper .content_wrapper:nth-child(2) form button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 50px;
+    margin: 30px 0 0 0;
+    padding: 0 20px 0 30px;
+    font-size: 18px;
+    display: block;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    color: whitesmoke;
+    background-color: #191c26;
+    transition: .4s;
+    cursor: pointer;
+}
+section .wrapper .content_wrapper:nth-child(2) form button:hover,
+section .wrapper .content_wrapper:nth-child(2) form button:focus,
+section .wrapper .content_wrapper:nth-child(2) form button:active {
+    background-color: #E91E63;
+}
+@media (max-width: 750px) {
+    section .wrapper .content_wrapper:nth-child(1) {
+        display: none;
+    }
+    section .wrapper .content_wrapper:nth-child(2) {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 450px) {
+    section .wrapper .content_wrapper:nth-child(1) {
+        display: none;
+    }
+    section .wrapper {
+        width: 100vw;
+        height: 100vh;
+        background: #cfcfcf;
+    }
+    section .wrapper .content_wrapper:nth-child(2) {
+        position: relative;
+        top: 100px;
+        height: calc(100% - 100px);
+    }
+}
